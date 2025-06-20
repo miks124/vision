@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+    <meta name="description" content="Explore vi§ion Clothing: bold streetwear inspired by altered perception and visual symbolism. From glitchy typography to hypnotic eye prints, dress to express." />
+    <meta name="keywords" content="streetwear, visionary fashion, glitch design, eye graphic shirts, urban style, vi§ion clothing, alternative fashion, bold designs, South African clothing brand" />
+    <meta name="author" content="vi§ion Clothing" />
 </head>
 
 <!--Code for navigation bar-->
@@ -21,22 +25,29 @@
 <body>
    
     <h1><u><b>Business Contact details:</b></u></h1>
-    <img src="Images/owners.jpg" alt="Picture of both owners" width="300" height="200" class="centered-image">
+    <img src="Images/owners.jpg" alt="Picture of both owners" class="lightbox-trigger" style="width: 200px; cursor: pointer;" />
     <p><br> 041 298 7474
     <br> visionclothing@gmail.com
     </p>
 
     <h1><u><b>Mikhyle Human's Contact details:</b></u></h1>
-    <img src="Images/mikhyle.jpg" alt="Picture of Mikhyle Human" width="300" height="200" class="centered-image">
+    <img src="Images/mikhyle.jpg" alt="Picture of Mikhyle Human" class="lightbox-trigger" style="width: 200px; cursor: pointer;" />
     <p><br> 061 278 7479
     <br> mikhuman@vision.com
     </p>
 
     <h1><u><b>Marco Human's Contact details:</b></u></h1>
-    <img src="Images/marco.jpg" alt="Picture of Marco Human" width="300" height="200" class="centered-image">
+    <img src="Images/marco.jpg" alt="Picture of Marco Human" class="lightbox-trigger" style="width: 200px; cursor: pointer;" />
     <p><br> 083 273 4664
     <br> marhuman@vision.com
     </p>
+
+<!-- Lightbox -->
+<div id="lightbox" style="display: none;">
+  <span id="close">&times;</span>
+  <img id="lightbox-img" src="" alt="Expanded view" />
+</div>
+
 </body>
 
 <!--Code for footer-->

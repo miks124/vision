@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="description" content="Explore vi§ion Clothing: bold streetwear inspired by altered perception and visual symbolism. From glitchy typography to hypnotic eye prints, dress to express." />
+    <meta name="keywords" content="streetwear, visionary fashion, glitch design, eye graphic shirts, urban style, vi§ion clothing, alternative fashion, bold designs, South African clothing brand" />
+    <meta name="author" content="vi§ion Clothing" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
 </head>
 
 <!--Code for navigation bar-->
@@ -45,6 +51,34 @@
     <br>Co-owner
     <br>The moneyman and talker.
     </p>
+
+    <h1><b>Where are we?</b></h1>
+    
+    <!-- Include Leaflet CSS and JS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Map container -->
+<div id="map" style="height: 400px;"></div>
+
+<!-- JavaScript to initialize the map -->
+<script>
+  // Coordinates for Rosebank College, Port Elizabeth
+  var map = L.map('map').setView([-33.9608, 25.6022], 16);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data © OpenStreetMap contributors'
+  }).addTo(map);
+
+  var marker = L.marker([-33.9608, 25.6022]).addTo(map);
+  marker.bindPopup("<b>Rosebank College</b><br>3 Rink Street, Port Elizabeth").openPopup();
+
+  map.on('click', function(e) {
+    alert("You clicked the map at " + e.latlng);
+  });
+</script>
+
+      
 </body>
 
 <!--Code for footer-->
