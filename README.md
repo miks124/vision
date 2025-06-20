@@ -3,4 +3,4 @@ Changelog: I completed the budget from Part 1 of the POE. I included the sitemap
 
 Part 2: I created a style sheet to add a basic style to all the pages. Researched the basic breakpoints for different devices and added them to the CSS style sheet. Reorganised the wedpages to create a better design.
 
-Part 3: I added an interactive map and animated the product images so that when they are hovered over the image becomes larger. I also added meta tags to the webpages. I changed the alt texts of the product images to be more descriptive. I created the robots.txt file.
+Part 3: I added an interactive map and animated the product images so that when they are hovered over the image becomes larger. I also added meta tags to the webpages. I changed the alt texts of the product images to be more descriptive. I created the robots.txt file. I added a lightbox feature on the contact us page.
